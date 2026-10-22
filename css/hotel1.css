@@ -1,0 +1,355 @@
+body
+{
+  text-align: center;
+  background-color:lightblue;
+}
+.picture2 {
+  position: relative;
+  width: 100%;
+  height: 300px; /* לדוגמה */
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+h1
+{
+  color: orange;
+}
+.fl_write
+{
+
+color:orange;
+font-size:xx-large;
+  min-width: 250px;
+  position: relative;
+  z-index: 1;
+  align-self: center;
+ 
+}
+
+.write
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    position: absolute;
+    top: 50%; 
+    left:50%; 
+    transform: translate(-50%,-50%);
+    color: aliceblue; 
+    font-size: 1.4 rem;
+    font-weight: bold;
+
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* white-space: normal; */
+    
+    /* מאפשר גלישה של המילים */
+    /* overflow: hidden; */
+     /* מונע גלילה מיותרת */
+    /* word-wrap: break-word;  */
+    /* שוברת מילים במקרה של אורך חריג */
+    max-width: 90%; /* מונע גלישה לרוחב */
+    max-height: 90%; /* מונע גלישה לגובה */
+    box-sizing: border-box; /* חישוב רוחב וגובה כולל רווחים פנימיים */
+    white-space: normal; /* שובר טקסט לשורות */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* text-align: center;  */
+    /* ממקם את הטקסט במרכז */
+}
+
+.container_1_on_hotel2 {
+    display: flex;            /* Flexbox לסידור התמונות בשורה */
+    flex-wrap: wrap;          /* מאפשר לתמונות לעבור לשורה הבאה אם אין מקום */
+    gap: 20px;                /* רווח בין התמונות */
+    justify-content: center;  /* ממרכז את התמונות */
+    padding: 20px;            /* ריפוד פנימי */
+  }
+  
+  /* מיכל תמונה בודד */
+  .picture2  {
+    position: relative;       /* מיקום יחסי כדי שנוכל למקם את הטקסט המעל לתמונה */
+    width: 330px;             /* קובע את רוחב התמונה */
+    height: 280px;            /* קובע את גובה התמונה */
+    overflow: hidden;         /* מסתיר תוכן (כמו טקסט או תצלום המתרחב מעבר לגבולות) */
+    border-radius: 10px;      /* אפשרות: פינות מעוגלות */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* צל ראשוני */
+    transition: box-shadow 0.3s ease; /* מעבר חלק בין הצללים */
+  }
+  
+  /* עיצוב התמונה */
+  .picture2 img {
+    width: 100%;              /* רוחב התמונה 100% ממיכל התמונה */
+    height: 100%;             /* גובה התמונה 100% ממיכל התמונה */
+    object-fit: cover;        /* מבטיח שהתמונה תכסה את כל המיכל */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* מעבר חלק בין שינוי בגודל ועופף */
+  }
+  
+  /* עיצוב טקסט מעל התמונה */
+  .overlay-text  :hover  {
+    position: absolute;       /* מיקום מוחלט בתוך המיכל */
+    top: 50%;                 /* מיקום אנכי 50% מהחלק העליון של המיכל */
+    left: 50%;                /* מיקום אופקי 50% מהחלק השמאלי של המיכל */
+    transform: translate(-50%, -50%); /* ממקם את הטקסט בדיוק במרכז המיכל */
+    color: white;             /* צבע טקסט לבן */
+    font-size: 18px;          /* גודל פונט של 18px */
+    font-weight: bold;        /* משקל פונט מודגש */
+    opacity: 0;               /* הופך את הטקסט לבלתי נראה בהתחלה */
+    transition: opacity 0.3s ease; /* מעבר חלק בין הופעת הטקסט להיעלמותו */
+  }
+  
+  /* אפקט על hover: כהות התמונה, הצגת הטקסט והגדלת התמונה */
+  .picture2:hover img {
+    opacity: 0.3;             /* כהות התמונה */
+    transform: scale(1.1);    /* הגדלת התמונה ב-10% */
+  }
+  
+  .picture2 {
+    #fl_write_id
+    {
+      text-decoration: underline;
+    }
+    opacity: 1;               /* הצגת הטקסט בעת hover */
+  }
+  
+  .picture2:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1); /* צל חזק יותר בעת hover */
+  }
+  /* #fl_write_id:hover
+  {
+    text-decoration: underline;
+  } */
+  .fl_write:hover
+  {
+    opacity: 1;
+    
+  }
+#write1
+{
+opacity: 0;
+
+}
+#write1:hover
+{
+opacity: 1;
+}
+#write2
+{
+opacity: 0;
+}
+#write2:hover
+{
+opacity: 1;
+}
+#write3
+{
+opacity: 0;
+}
+#write3:hover
+{
+opacity: 1;
+}
+#write4
+{
+opacity: 0;
+}
+#write4:hover
+{
+opacity: 1;
+}
+
+#write5
+{
+opacity: 0;
+}
+#write5:hover
+{
+opacity: 1;
+}
+
+#write6
+{
+opacity: 0;
+}
+#write6:hover
+{
+opacity: 1;
+}
+
+#write7
+{
+opacity: 0;
+}
+#write7:hover
+{
+opacity: 1;
+}
+
+#write8
+{
+opacity: 0;
+}
+#write8:hover
+{
+opacity: 1;
+}
+
+#write9
+{
+opacity: 0;
+}
+#write9:hover
+{
+opacity: 1;
+}
+
+#write10
+{
+opacity: 0;
+}
+#write10:hover
+{
+opacity: 1;
+}
+
+#write11
+{
+opacity: 0;
+}
+#write11:hover
+{
+opacity: 1;
+}
+
+#write12
+{
+opacity: 0;
+}
+#write12:hover
+{
+opacity: 1;
+}
+#write13
+{
+opacity: 0;
+}
+#write13:hover
+{
+opacity: 1;
+}
+
+#write14
+{
+opacity: 0;
+}
+#write14:hover
+{
+opacity: 1;
+}
+
+#write15
+{
+opacity: 0;
+}
+#write15:hover
+{
+opacity: 1;
+}
+
+#write16
+{
+opacity: 0;
+}
+#write16:hover
+{
+opacity: 1;
+}
+
+#write17
+{
+opacity: 0;
+}
+#write17:hover
+{
+opacity: 1;
+}
+
+#write18
+{
+opacity: 0;
+}
+#write18:hover
+{
+opacity: 1;
+}
+
+#write19
+{
+opacity: 0;
+}
+#write19:hover
+{
+opacity: 1;
+}
+
+#write20
+{
+opacity: 0;
+}
+#write20:hover
+{
+opacity: 1;
+}
+#classId {
+  scroll-margin-top: 50px; /* התאמת מרווח לגלילה */
+}
+#townId {
+  scroll-margin-top: 50px; /* התאמת מרווח לגלילה */
+}
+#exeId {
+  scroll-margin-top: 50px; /* התאמת מרווח לגלילה */
+}
+/* a
+{
+  z-index: 1000;
+  width: 100%; 
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  justify-content: space-around; /* מפזר את הקישורים בצורה שווה */
+  padding: 10px 0;
+  z-index: 1000;
+  margin-bottom: 400px;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color orange;
+}
+
+header a:hover {
+  background-color:orange;
+  border-radius: 5px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: orange;
+  padding: 10px;
+  z-index: 1000;
+  text-align: center;
+}

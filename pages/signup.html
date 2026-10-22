@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolidayFinder</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    
+  <header class="header">
+    <div class="logo">
+        <img src="../LOGO.png" alt="" width="100px" height="100px" id="logoinheader">
+        
+    </div>
+    <nav class="nav-links">
+        <ul>
+        <li><a href="#" class="ruler-link">לתכנן חופשה</a></li>
+        <li><a href="policy.html" class="ruler-link">אודות</a></li>
+        <li><a href="hotel2.html" class="ruler-link">למלונות</a></li>
+        <li><a href="signup.html" class="ruler-link">לטופס הזמנה</a></li>
+        <li><a href="home.html" class="ruler-link">לדף הבית</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <div class="container">
+        <h2>רישום לטיול מאורגן</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">שם מלא</label>
+            <input type="text" id="name" name="name" placeholder="הכנס את שמך המלא" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="email">אימייל</label>
+            <input type="email" id="email" name="email" placeholder="הכנס את כתובת האימייל שלך" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="phone">טלפון</label>
+            <input type="tel" id="phone" name="phone" placeholder="הכנס מספר טלפון" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="destination">יעד הטיול</label>
+            <select id="destination" name="destination" required >
+             <option value="">בחר מלון</option>
+             <option value="">the Ritz-Carlton</option>
+             <option value="">Hotel de Paris</option>
+             <option value="">La Mamounia</option>
+             <option value="">Mandarin Oriental</option>
+             <option value="">Four Seasons Resort</option>
+             <option value="">Bulgari Hotel</option>        
+            </select>
+          </div>
+        
+          <div class="form-group">
+            <label for="dates">תאריכים</label>
+            <input type="text" id="dates" name="dates" placeholder="בחר תאריכים (למשל: 01/01/2024 - 10/01/2024)" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="preferences">העדפות מיוחדות</label>
+            <textarea id="preferences" name="preferences" placeholder="הכנס העדפות אם יש (אוכל, לינה, סיורים מיוחדים)"></textarea>
+          </div>
+        
+          <button type="submit" class="btn-submit">שלח רישום</button>
+        </form>
+        
+        <div class="footer">
+          <p>ההרשמה תישלח אלינו ונתקשר אליך בהקדם!</p>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+li{
+    direction: rtl;
+}
+.content
+{
+    direction: rtl;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(../images/white-towel-bed-decoration-bedroom-interior.jpg) ; /* Light blue background */
+    background-size: 100%;
+    color: #333;
+}
+
+/* Main Content Styling */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: lightskyblue; /* Orange text for subheadings */
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color:lightskyblue; /* Orange footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .content {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+a
+{
+    color: orange;
+    font-weight: bold;
+}

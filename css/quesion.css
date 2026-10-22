@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-image:url(../images/popular-resort-amara-dolce-vita-luxury-hotel-with-pools-water-parks-recreational-area-along-sea-coast-turkey-sunset-tekirova-kemer.jpg);
+    background-size: 100%;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color:white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
+    margin-top: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: #1be4da;
+}
+
+details {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    direction: rtl;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    direction: rtl;
+}
+
+details[open] summary {
+    background-color: #eaeaea;
+}
+
+.faq-answer {
+    padding: 10px;
+    background-color: rgb(224, 242, 248);
+   
+    margin-top: 10px;
+    border-radius: 5px;
+}

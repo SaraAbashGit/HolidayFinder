@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolidayFinder</title>
+    <style>
+td
+{
+    width: 90px;
+    height: 70px;
+}
+table {
+      border: 2px solid rgb(231, 165, 79);  /* מסגרת עבה בצבע שחור */
+      border-collapse: collapse;  /* גורם למסגרת לא להיראות כפול */
+    }
+    td, tr {
+      border: 1px solid rgb(231, 165, 79);  /* מסגרת לכל תא בודד */
+      padding: 10px;  /* ריווח בתוך התא */
+      text-align: center;  /* ממרכז את התוכן בתוך התא */
+    }
+    #tdSpeciel
+    {
+        font-weight: bold;
+    }
+    @keyframes colorChange
+     {
+      0% 
+      {
+        color: blue;
+      }
+      50% 
+      {
+        color: red;
+      }
+      100% 
+      {
+        color: green;
+      }
+      }
+h1
+{
+    color: rgb(231, 165, 79);
+    
+      animation: colorChange 3s infinite; /* 3 שניות, חזור על האנימציה לנצח */
+}
+    </style>
+</head>
+<body>
+    <table>
+        <h1>Details of our hotels</h1>
+    <tr>
+        <td id="tdSpeciel">Hotel name:</td>
+        <td>hotel1</td>
+        <td>hotel2</td>
+        <td>hotel3</td>
+    </tr>
+    <tr>
+        <td id="tdSpeciel">Price:</td>
+        <td>150$</td>
+        <td>250$</td>
+        <td>320$</td>
+    </tr>
+    <tr>
+        <td id="tdSpeciel">Half board:</td>
+        <td>1600</td>
+        <td>1860</td>
+        <td>2200</td>
+    </tr>
+    <tr>
+        <td id="tdSpeciel">Full board:</td>
+        <td>1640</td>
+        <td>1970</td>
+        <td>2300</td>
+    </tr>
+</table>
+</body>
+</html>
